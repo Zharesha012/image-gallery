@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery with Lightbox</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <h1>My Image Gallery</h1>
+ <div class="gallery">
+  <img src="https://source.unsplash.com/600x400/?beach,sunset" alt="Beach Sunset" />
+  <img src="https://source.unsplash.com/600x400/?mountain,snow" alt="Snowy Mountain" />
+  <img src="https://source.unsplash.com/600x400/?forest,path" alt="Forest Path" />
+  <img src="https://source.unsplash.com/600x400/?city,night" alt="City Lights" />
+  <img src="https://source.unsplash.com/600x400/?desert,sand" alt="Desert Dunes" />
+  <img src="https://source.unsplash.com/600x400/?lake,reflection" alt="Lake Reflection" />
+</div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Enlarged Image"/>
+    <div id="lightbox-caption" class="caption"></div>
+    <span class="prev">&#10094;</span>
+    <span class="next">&#10095;</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
